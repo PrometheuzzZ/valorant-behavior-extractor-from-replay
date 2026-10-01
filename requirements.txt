@@ -1,0 +1,4 @@
+# Python dependencies of tools/ and tools/tests; the Rust workspace needs none.
+# Both are required: most tools test modules import them.
+pyarrow>=15
+numpy>=1.26

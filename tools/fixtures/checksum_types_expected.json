@@ -1,0 +1,23 @@
+{
+ "description": "Mismatches tools/check_checksum_types.py reports and does not fail on. Each item names one mismatch shape exactly -- the declared checksum, the wire name, the parent it reproduces under (`top level` or a PARENT_CHAINS label), the FieldType vrfkit decodes it with and the C++ type the checksum names -- and says why vrfkit keeps it and what showed it. It covers every typed identity and checksum_table.rs carrier of that shape, whatever the group. An item whose checksum the input declares but which covers no mismatch is STALE and fails the run, so correct or remove an item as soon as what it describes stops being reported; an item whose checksum the input does not declare is counted as not applicable. A mismatch that is simply not fixed yet does not belong here: retype it.",
+ "expected": [
+  {
+   "checksum": 747197698,
+   "name": "249",
+   "parent": "Transform:FTransform",
+   "vrfkit_type": "VectorDouble",
+   "declared_type": "FQuat",
+   "reason": "FQuat X/Y/Z decoded with VectorDouble on purpose; bits identical; see docs/DATA.md, 'RPC transforms: `249` is a rotation quaternion, not a rotator'. `249` is the hardcoded FName index of `Rotation`, the rotation member of an FTransform the wire flattens into Translation, Scale3D and this. The public engine source's FQuat::NetSerialize writes X, Y and Z as three doubles and the reader rebuilds W (a convention not verified in this binary; the values fit it), which is FVector's 192-bit layout, so VectorDouble reads the right three numbers; the checksum names the C++ type, FQuat, and that alone makes it a mismatch. No FieldType is added for a quaternion because its bits would be read identically.",
+   "evidence": "Checksum (compatible_checksum in this tool): 747197698 reproduces as Rotation: FQuat under Transform: FTransform, and not as FRotator (3753301026) or FVector (1853556327 at static index 0; no index 0-15 reproduces); the siblings Translation 2235276067 and Scale3D 2983776962 reproduce as FVector under the same parent. The 13.06 executable's reflection has Transform.Rotation as a quaternion. Declaration corpus r3 (1,018 replays, 24 builds, 2026-09-28): 7 groups declare it -- EffectManagerComponent:MulticastPlay{Continuous,OneShot}Effect, AresEquippable:MulticastPlay{Continuous,OneShot}EffectFromClient, TransformTransitionContext, TransitionContext_Sequoia_X_TeleportInfo_C and StateContext_ActorTrailTargetingResult_C -- and checksum_table.rs types it VectorDouble. Values (r3 exports of all 1,018 replays, main and checkpoint rows, an independent struct.unpack('<3d') of raw_bits, 2026-09-28): 12,698,371 rows, all 192 bits, |xyz| <= 1 on every row (the largest exactly 1), value_str equal to the independent read on every row."
+  },
+  {
+   "checksum": 1874998526,
+   "name": "249",
+   "parent": "SpawnTransform:FTransform",
+   "vrfkit_type": "VectorDouble",
+   "declared_type": "FQuat",
+   "reason": "The same property as the 747197698 item under another parameter: the Rotation (FName index 249) of MulticastResetForRespawn's SpawnTransform. FQuat X/Y/Z decoded with VectorDouble on purpose; bits identical; see docs/DATA.md, 'RPC transforms: `249` is a rotation quaternion, not a rotator'.",
+   "evidence": "Checksum (compatible_checksum in this tool): 1874998526 reproduces as Rotation: FQuat under SpawnTransform: FTransform, and not as FRotator (2385444314) or FVector (2444400645); the siblings Translation 131504838 and Scale3D 3357891630 reproduce as FVector under the same parent. AresGameStateBase:MulticastResetForRespawn declares all three in the main-stream manifest of every one of the 1,018 replays of declaration corpus r3 (2026-09-28), and checksum_table.rs types 1874998526 VectorDouble. The 13.06 executable's reflection has SpawnTransform as the FTransform parameter of AAresGameStateBase::MulticastResetForRespawn. Values (r3 exports of all 1,018 replays, independent struct.unpack('<3d') of raw_bits): 183,577 rows, largest |xyz| 0.99999999999986, value_str equal to the independent read on every row."
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+[
+ {
+  "group": "/Game/Characters/Deadeye/Deadeye_PC.Deadeye_PC_C",
+  "field": "ReplayLastTransformUpdateTimeStamp",
+  "type": "Float"
+ },
+ {
+  "group": "/Game/Characters/Gumshoe/Gumshoe_PC.Gumshoe_PC_C",
+  "field": "ReplayLastTransformUpdateTimeStamp",
+  "type": "Float"
+ },
+ {
+  "group": "/Game/Characters/Thorne/Thorne_PC.Thorne_PC_C",
+  "field": "ReplayLastTransformUpdateTimeStamp",
+  "type": "Float"
+ },
+ {
+  "group": "/Game/GameModes/Bomb/BombPlayerState.BombPlayerState_C",
+  "field": "bFadeCrosshairWithFiringError",
+  "type": "Bool"
+ },
+ {
+  "group": "/Game/GameModes/Bomb/BombPlayerState.BombPlayerState_C",
+  "field": "bShowMinError",
+  "type": "Bool"
+ },
+ {
+  "group": "/Game/GameModes/Bomb/BombPlayerState.BombPlayerState_C",
+  "field": "bShowSpectatedPlayerCrosshair",
+  "type": "Bool"
+ },
+ {
+  "group": "/Game/GameModes/Bomb/BombPlayerState.BombPlayerState_C",
+  "field": "bUsePrimaryCrosshairForADS",
+  "type": "Bool"
+ },
+ {
+  "group": "/Script/ShooterGame.EquippableStateMachineComponent",
+  "field": "TransitionContext",
+  "type": "ObjectNetGuid"
+ },
+ {
+  "group": "/Script/ShooterGame.AresInventory",
+  "field": "CorrectionIndex",
+  "type": "Int32",
+  "checksum": 3198546915
+ },
+ {
+  "group": "/Script/ShooterGame.AresInventory",
+  "field": "LastSeenClientCorrectionIndex",
+  "type": "Int32",
+  "checksum": 1076231069
+ },
+ {
+  "group": "/Script/ShooterGame.AresEquippableDataTracker",
+  "field": "OriginalBuyerTeam",
+  "type": "FName",
+  "checksum": 255019476
+ },
+ {
+  "group": "/Game/Equippables/Guns/Sidearms/BasePistol/BasePistol.BasePistol_C_ClassNetCache",
+  "field": "MulticastPlayContinuousEffectFromClient.EffectManagerComponent",
+  "type": "ObjectNetGuid",
+  "checksum": 1051633025
+ },
+ {
+  "group": "/Game/Equippables/Guns/Sidearms/BasePistol/BasePistol.BasePistol_C_ClassNetCache",
+  "field": "MulticastPlayContinuousEffectFromClient.AllianceFilter",
+  "type": "EnumByte",
+  "checksum": 2270825073
+ },
+ {
+  "group": "/Script/ShooterGame.ForceModuleManagerComponent_ClassNetCache",
+  "field": "NetMulticastRemoveForceModule.ModuleType",
+  "type": "EnumByte",
+  "checksum": 3263282135
+ },
+ {
+  "group": "/Game/GameModes/Bomb/BombGameState.BombGameState_C",
+  "field": "CurrentLossStreak",
+  "type": "Int32",
+  "checksum": 1863385026
+ },
+ {
+  "group": "/Game/GameModes/Bomb/BombGameState.BombGameState_C",
+  "field": "LossStreakTeam",
+  "type": "ObjectNetGuid",
+  "checksum": 22256526
+ }
+]

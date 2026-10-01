@@ -1,0 +1,69 @@
+{
+ "corpus": "%LOCALAPPDATA%\\vrfkit\\baseline-corpora\\build_1306",
+ "branches": {
+  "++Ares-Core+release-13.06": 6
+ },
+ "totals": {
+  "blocks": 3369208,
+  "fields": 2476146,
+  "rpcs": 1869797,
+  "malformed": 0,
+  "skipped": 52488160
+ },
+ "per_file": {
+  "2a7d2c4c-952b-444e-9e45-c45c5ae77610.vrf": {
+   "branch": "++Ares-Core+release-13.06",
+   "rate": "100.000000",
+   "blocks": 746326,
+   "fields": 540683,
+   "rpcs": 401146,
+   "malformed": 0,
+   "skipped": 38583002
+  },
+  "57881928-3465-4946-9828-b9d941309027.vrf": {
+   "branch": "++Ares-Core+release-13.06",
+   "rate": "100.000000",
+   "blocks": 589345,
+   "fields": 413384,
+   "rpcs": 344638,
+   "malformed": 0,
+   "skipped": 2880366
+  },
+  "a4b7406f-e3f2-4831-9111-1456e62871e1.vrf": {
+   "branch": "++Ares-Core+release-13.06",
+   "rate": "100.000000",
+   "blocks": 915382,
+   "fields": 702171,
+   "rpcs": 497705,
+   "malformed": 0,
+   "skipped": 5112512
+  },
+  "abf07066-49b5-42a0-bd05-a8985dc3d75f.vrf": {
+   "branch": "++Ares-Core+release-13.06",
+   "rate": "100.000000",
+   "blocks": 196843,
+   "fields": 135487,
+   "rpcs": 114097,
+   "malformed": 0,
+   "skipped": 625999
+  },
+  "e02e6230-07f8-4dcd-adcc-6acbbbea2537.vrf": {
+   "branch": "++Ares-Core+release-13.06",
+   "rate": "100.000000",
+   "blocks": 604306,
+   "fields": 452807,
+   "rpcs": 330515,
+   "malformed": 0,
+   "skipped": 2385363
+  },
+  "ee4c3f26-6892-4284-b2c5-f2df93e8c040.vrf": {
+   "branch": "++Ares-Core+release-13.06",
+   "rate": "100.000000",
+   "blocks": 317006,
+   "fields": 231614,
+   "rpcs": 181696,
+   "malformed": 0,
+   "skipped": 2900918
+  }
+ }
+}

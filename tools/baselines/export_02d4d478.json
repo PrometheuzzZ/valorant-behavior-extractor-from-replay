@@ -1,0 +1,100 @@
+{
+ "replay": "02d4d478-1dfb-4412-9a77-29ca29105a9d.vrf",
+ "counters": {
+  "chunks": 19,
+  "unknown_chunks": 0,
+  "frame_external_data_blobs": 0,
+  "frame_external_data_bytes": 0,
+  "frame_game_specific_bytes": 0,
+  "frame_non_finite_times": 0,
+  "packets": 530401,
+  "export_groups": 475,
+  "content_blocks": 608080,
+  "rep_layout_blocks": 258903,
+  "class_net_cache_blocks": 349168,
+  "fields": 429648,
+  "rpcs": 342990,
+  "actor_opens": 2028,
+  "actor_closes": 1799,
+  "partial_rows": 0,
+  "partial_bits": 0,
+  "fields_emitted": 1296660,
+  "rpcs_emitted": 342990,
+  "sink_actor_opens": 2028,
+  "sink_actor_closes": 1799,
+  "sink_content_blocks": 608080,
+  "bunches": 530401,
+  "malformed_packets": 0,
+  "skipped_bits": 18217181,
+  "movement_rows": 1844147,
+  "net_guid_rows": 16167,
+  "event_rows": 195,
+  "struct_blobs_decoded": 207,
+  "struct_blobs_failed": 0,
+  "movement_sized_section_tails": 0,
+  "movement_sized_section_tail_bits": 0,
+  "movement_open_section_tails": 0,
+  "movement_open_section_tail_bits": 0,
+  "movement_envelope_trailers": 1837580,
+  "movement_envelope_trailer_bits": 44101920,
+  "targeting_world_locations_decoded": 0,
+  "route_children_player_information": 563,
+  "route_children_tracked_rewards": 8527,
+  "route_children_selected_v2": 4100,
+  "route_children_kill_data": 1386,
+  "route_children_server_active_effects": 1364,
+  "route_children_requested_ignore_actors": 2670,
+  "route_children_active_blinds": 0,
+  "route_children_projectile_path": 0,
+  "tracked_rewards_opaque_empty_variants": 7,
+  "active_blinds_empty_trailers": 0,
+  "rpc_param_walks": 113215,
+  "event_layout_mismatches": 0,
+  "event_payloads_decoded": 195,
+  "event_payload_unknown_groups": 0,
+  "cnc_rpcs_emitted": 4901,
+  "cnc_bruteforce_payloads_attempted": 4683,
+  "cnc_bruteforce_payloads_unwalked": 0,
+  "rep_layout_cnc_tails_decoded": 218,
+  "rep_layout_cnc_tails_preserved": 114,
+  "overlay_decoded_ok": 822185,
+  "overlay_decode_errors": 0,
+  "overlay_raw_skip": 24747,
+  "overlay_not_in_table": 140814,
+  "overlay_no_field_name": 1249,
+  "overlay_rows_offered": 988995,
+  "effect_blobs_decoded": 61617
+ },
+ "parquet": {
+  "fields": {
+   "rows": 1296660,
+   "bytes": 12691843,
+   "sha256": "6e542a82801097ddf8efc34e15ef4aa0fd2700398adf9c8e98b627e687ac40db"
+  },
+  "movement": {
+   "rows": 1844147,
+   "bytes": 19984802,
+   "sha256": "3f512fba743b98923dc7366686d5be387b9ae98a4282f0abe33878311048ecfc"
+  },
+  "actors": {
+   "rows": 3827,
+   "bytes": 76830,
+   "sha256": "d76794ce202c8385aa5a7a595f1ef7531acf54baddbf67eb81b55ce314e07361"
+  },
+  "net_guids": {
+   "rows": 16167,
+   "bytes": 114423,
+   "sha256": "77b64c48bf205dbc8c08626a22fd6ddb363f65808846f36148eaa607746bdf9a"
+  },
+  "events": {
+   "rows": 195,
+   "bytes": 12455,
+   "sha256": "f4a628909f2be9d616bdb440a86183c68e619c00d7883830b66e2e081e31cb51"
+  },
+  "partials": {
+   "rows": 0,
+   "bytes": 2505,
+   "sha256": "8945eaca3d7e4f22c6fec2835b867f06e9023e14651d22874e1512fd11181d6d"
+  }
+ }
+}

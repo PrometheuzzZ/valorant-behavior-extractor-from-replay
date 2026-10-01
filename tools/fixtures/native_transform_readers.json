@@ -1,0 +1,89 @@
+[
+  {
+    "build": "11.06",
+    "exe_sha256": "e19cd60c64b0cf8f56c0ff189f0934ed564d3497d34c05d5d5b663692e204001",
+    "function_rva": "0x3f16240",
+    "recovered": true
+  },
+  {
+    "build": "11.07",
+    "exe_sha256": "47ba0f172f791326a3ba08f5aeadf91aa67ba8bf937d59ac0d85c20fbde04ff4",
+    "function_rva": "0x3f41460",
+    "recovered": true
+  },
+  {
+    "build": "11.08",
+    "exe_sha256": "0f9d629ea20a36367661012ea1a96e6af2ba6e4bbb2507cf5cda358b35c303d0",
+    "function_rva": "0x3f6a400",
+    "recovered": true
+  },
+  {
+    "build": "11.09",
+    "exe_sha256": "d6e82515c3feff0b14a0b2b7b8d56704be59a3422abe1d8576762349dbb573a1",
+    "function_rva": "0x3f5ae20",
+    "recovered": true
+  },
+  {
+    "build": "11.10",
+    "exe_sha256": "f6a1988a83e36bb0eedec9fe01d42d1c4f82401134e58c3780da645745cf562d",
+    "function_rva": "0x3f48e10",
+    "recovered": true
+  },
+  {
+    "build": "11.11",
+    "exe_sha256": "23231d2993a653b2e96e3e727ee5aa024bf002f1dc0d734e2827b788a94cb610",
+    "function_rva": "0x3ff0130",
+    "recovered": true
+  },
+  {
+    "build": "12.00",
+    "exe_sha256": "62e06f6cb9fc097c8dbe97ca5b559a0438159e4f611fa657c38c70e109110d86",
+    "function_rva": "0x3fec210",
+    "recovered": true
+  },
+  {
+    "build": "12.01",
+    "exe_sha256": "3219d79251443f65325b07099c16c9783e6918d6b35dd5ad67bcd7c177260419",
+    "function_rva": "0x3ff1960"
+  },
+  {
+    "build": "12.02",
+    "exe_sha256": "036e7cdf169d5b857eb1fbc0e109740f3352fa9dd97314693ca28d440facf635",
+    "function_rva": "0x40876c0"
+  },
+  {
+    "build": "12.03",
+    "exe_sha256": "127edcdc217a0e5ae1f187f48e2ca95afc791e8ad55bce27f940c634f2f18150",
+    "function_rva": "0x40a1020"
+  },
+  {
+    "build": "12.04",
+    "exe_sha256": "02dba2b4a1be24fcfdd950ee718abad1d519de427cfdeae7706a3cdcfb1e7f9f",
+    "function_rva": "0x411fb30"
+  },
+  {
+    "build": "12.05",
+    "exe_sha256": "c20be85753f70c941ec4e0f1cf79e5efcad4e5b3d653ea7d038e5b92b985f521",
+    "function_rva": "0x412a570"
+  },
+  {
+    "build": "12.06",
+    "exe_sha256": "0e0ddd0fcfafcc71b2cd39cdab63c11107e1bf94a8e09cd191e71216b3c0479a",
+    "function_rva": "0x4179ed0"
+  },
+  {
+    "build": "12.07",
+    "exe_sha256": "500942afbdc8503753c22904ad5ddd73ae4d6ae828e61b30affc5722fe50b5b8",
+    "function_rva": "0x41a4640"
+  },
+  {
+    "build": "12.08",
+    "exe_sha256": "8c6f8b1746cafe4bdbee6549639c6bc68526e72dea5973463b14750b9a9e88c9",
+    "function_rva": "0x41c5680"
+  },
+  {
+    "build": "12.09",
+    "exe_sha256": "60e6522c4a3bc475d8d931f74df7dd26db2da156bc6c2f3678ccc29b78cc9939",
+    "function_rva": "0x3252b00"
+  }
+]

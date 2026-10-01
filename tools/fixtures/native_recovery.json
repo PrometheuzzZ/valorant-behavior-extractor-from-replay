@@ -1,0 +1,142 @@
+[
+  {
+    "build": "11.06",
+    "exe_sha256": "12baf409755f1a2d18b30b3231d70f399887a7146a35df4f739559f310cf06b5",
+    "stub_sha256": "1c899d6ed8d07e98183d9d493ccdd2a3baa310d785599200666cfe1ae7d4f905",
+    "key_source_rva": "0x50c3e0",
+    "page_cipher": {
+      "source": "0x5089b0",
+      "rows": 80,
+      "stride": 183,
+      "table": "0x1563c14",
+      "tablebase": "0x220ba0",
+      "obj": "0x589ef0",
+      "obj_slot": "0x120",
+      "key_slot": "0x98",
+      "page_slot": "0xa8",
+      "len_slot": "0xb0",
+      "stop": "0x1afc73a"
+    },
+    "recovered_sha256": "e19cd60c64b0cf8f56c0ff189f0934ed564d3497d34c05d5d5b663692e204001"
+  },
+  {
+    "build": "11.07",
+    "exe_sha256": "62aed48eced17b36f4f25a275a472f62dad040db79d20929dc4e3bacea569eb7",
+    "stub_sha256": "13e2b97b56ddbe471a48bcc6357f41fc8b18633387bfe7d47417f202571f4578",
+    "key_source_rva": "0x50e200",
+    "page_cipher": {
+      "source": "0x50e560",
+      "rows": 179,
+      "stride": 208,
+      "table": "0x156ba30",
+      "tablebase": "0x22cbc0",
+      "obj": "0x590130",
+      "obj_slot": "0x130",
+      "key_slot": "0xa8",
+      "page_slot": "0xc0",
+      "len_slot": "0xb8",
+      "stop": "0x1b1248a"
+    },
+    "recovered_sha256": "47ba0f172f791326a3ba08f5aeadf91aa67ba8bf937d59ac0d85c20fbde04ff4"
+  },
+  {
+    "build": "11.08",
+    "exe_sha256": "df36e7c3379d949bed92a39fb8e22971254ed77fa6268b6e24cde7e2cc12eae0",
+    "stub_sha256": "ef22d68faf28c4ccabc601300bccfa5c1c75130d4ed66cbdad774e5a2c8a1d7a",
+    "key_source_rva": "0x484840",
+    "page_cipher": {
+      "source": "0x485150",
+      "rows": 189,
+      "stride": 120,
+      "table": "0x14fb3d8",
+      "tablebase": "0x210340",
+      "obj": "0x5090c0",
+      "obj_slot": "0xd8",
+      "key_slot": "0xa8",
+      "page_slot": "0xc8",
+      "len_slot": "0xb8",
+      "stop": "0x1a4e26d"
+    },
+    "recovered_sha256": "0f9d629ea20a36367661012ea1a96e6af2ba6e4bbb2507cf5cda358b35c303d0"
+  },
+  {
+    "build": "11.09",
+    "exe_sha256": "e5f32847d5ac06ae06308ce749fc2aa3691ddbf30af97acffd7c83ddb2ec0ccd",
+    "stub_sha256": "6749d66def31766de424405db4ace595b2a31096ab2377776824f0a662614758",
+    "key_source_rva": "0x482310",
+    "page_cipher": {
+      "source": "0x482c60",
+      "rows": 143,
+      "stride": 71,
+      "table": "0x150c42c",
+      "tablebase": "0x24fcc0",
+      "obj": "0x501400",
+      "obj_slot": "0xd8",
+      "key_slot": "0xa8",
+      "page_slot": "0xc8",
+      "len_slot": "0xb8",
+      "stop": "0x1ac215a"
+    },
+    "recovered_sha256": "d6e82515c3feff0b14a0b2b7b8d56704be59a3422abe1d8576762349dbb573a1"
+  },
+  {
+    "build": "11.10",
+    "exe_sha256": "fb30f8ae235dcca7b675926c70ae47014cb43edbe2ebc1fee4aece001d91d8b5",
+    "stub_sha256": "31da8f0438cb919a09951b7e2e1ca2f0c5d12f60e927566d9c3977d6195407d8",
+    "key_source_rva": "0x5047c0",
+    "page_cipher": {
+      "source": "0x504da0",
+      "rows": 166,
+      "stride": 93,
+      "table": "0x1587194",
+      "tablebase": "0x244550",
+      "obj": "0x587e30",
+      "obj_slot": "0x130",
+      "key_slot": "0xa8",
+      "page_slot": "0xc0",
+      "len_slot": "0xb8",
+      "stop": "0x1aedfce"
+    },
+    "recovered_sha256": "f6a1988a83e36bb0eedec9fe01d42d1c4f82401134e58c3780da645745cf562d"
+  },
+  {
+    "build": "11.11",
+    "exe_sha256": "5e6b8ee06785044c413153158c20e616e1362e8868ff1d38aa2845ea18a17f9b",
+    "stub_sha256": "a9d364747e4d8a973b9b2a74f8aaede3f79da39c871f867704ea05b15b54a12a",
+    "key_source_rva": "0x507cf0",
+    "page_cipher": {
+      "source": "0x508870",
+      "rows": 136,
+      "stride": 103,
+      "table": "0x15f57c0",
+      "tablebase": "0x673d0",
+      "obj": "0x58ab20",
+      "obj_slot": "0x130",
+      "key_slot": "0xa8",
+      "page_slot": "0xc0",
+      "len_slot": "0xb8",
+      "stop": "0x186331c"
+    },
+    "recovered_sha256": "23231d2993a653b2e96e3e727ee5aa024bf002f1dc0d734e2827b788a94cb610"
+  },
+  {
+    "build": "12.00",
+    "exe_sha256": "ce6396439b956a042e25a2db067f5cb1c744d88571bd085991dc2b10ccb49245",
+    "stub_sha256": "34c30b423c1cbeabd3bfdd3e44cc29685d2e91a1ac6bd95f829001b514bc08f2",
+    "key_source_rva": "0x4907d0",
+    "page_cipher": {
+      "source": "0x486200",
+      "rows": 169,
+      "stride": 196,
+      "table": "0x1573564",
+      "tablebase": "0x1de880",
+      "obj": "0x50f2e0",
+      "obj_slot": "0xe0",
+      "key_slot": "0xa8",
+      "page_slot": "0xc0",
+      "len_slot": "0xb8",
+      "stop": "0x1a74c06"
+    },
+    "recovered_sha256": "62e06f6cb9fc097c8dbe97ca5b559a0438159e4f611fa657c38c70e109110d86"
+  }
+]

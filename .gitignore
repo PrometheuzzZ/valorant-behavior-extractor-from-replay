@@ -1,0 +1,23 @@
+target/
+/target-*/
+**/*.rs.bk
+__pycache__/
+*.py[cod]
+
+# Local checkout of the reference C# sources; never committed.
+/.refsrc/
+
+# Replays and parsed output are large and user-specific.
+*.vrf
+/out/
+*.parquet
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent and local worktrees of this repo.
+/.claude/
+/.worktrees/

@@ -1,0 +1,11 @@
+[package]
+name = "extract-component-classes"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+oozextract = { workspace = true }
+# The default `disable-bounds-checking` feature is unsafe code.
+cityhasher = { version = "0.1", default-features = false }

@@ -1,0 +1,19 @@
+{
+ "description": "Evidenced losses tools/check_entry_survival.py reports and does not fail on. Each item names one finding exactly (entry key, build, finding) and says why it is accepted and what showed it. An item that matches no failing finding is STALE and fails the run, so remove an item as soon as what it describes stops being reported. A loss that is simply not fixed yet does not belong here.",
+ "expected": [
+  {
+   "entry": "table|/Game/GameModes/Bomb/BombGameState.BombGameState_C|TeamEconomy",
+   "build": "13.02",
+   "finding": "field-missing",
+   "reason": "13.02 replaced BombGameState's TeamEconomy array with TeamStates: the per-round team economy is read from BaseTeamState from 13.02 on and from TeamEconomy on 13.01 and earlier (docs/DATA.md, 'Per-round team economy'). The TeamEconomy entry and its struct-blob decoder stay for the builds that declare it.",
+   "evidence": "Declaration corpus r3 (1,018 exports, 2026-09-28): TeamEconomy (338800366) declared in 215 of 215 13.01 replays (210 BombGameState, 5 Swiftplay game state) and in 0 of 205 13.02 replays; TeamStates (929598027 and 3930476181) declared in 205 of 205 13.02 replays and in none of 13.01."
+  },
+  {
+   "entry": "table|/Game/Characters/Gumshoe/S0/Ability_4/Projectile_Gumshoe_4_CageTrap.Projectile_Gumshoe_4_CageTrap_C|HasStopped",
+   "build": "13.01",
+   "finding": "moved",
+   "reason": "13.01 moved Cypher's cage-trap projectile from Ability_4/Projectile_Gumshoe_4_CageTrap_C to Ability_Q/Projectile_Gumshoe_Q_CageTrap_C (the trapwire took slot 4), and the successor stopped replicating HasStopped: it declares the old group's other five fields under their old handles and checksums, and nothing else. With no declaration there is nothing for any key to type, so the loss is correct rather than a missing entry. The Bool entry on the old path stays for the 11.06-12.08 replays that declare it.",
+   "evidence": "Declaration corpus r3 (1,018 exports, 2026-09-28; main-stream manifests plus every checkpoint's declaration tables): the old group is declared in 10 replays (11.06 2, 11.07 1, 11.10 1, 11.11 2, 12.02 2, 12.06 1, 12.08 1), each time with the same six fields -- 216, ReplicatedMovement, Owner, 215 and Instigator at handles 3, 10, 11, 12 and 13, and HasStopped (checksum 3667634484, handle 14 in 4 replays and 15 in 6); 4 of them fall in 13.01's reference window (12.01-13.00, 30 replays), and 0 of the 215 13.01 replays declare it (p = 1.9e-4). The successor is declared in 70 of the 215 13.01 replays and in 52/205, 27/108, 108/401 and 7/38 of 13.02, 13.04, 13.05 and 13.06, always with exactly 216 (4109980037), ReplicatedMovement (2749104612), Owner (1022089157), 215 (1710918439) and Instigator (220456479), at the old handles. From 13.01 on no group declares a field named HasStopped and no field carries 3667634484."
+  }
+ ]
+}

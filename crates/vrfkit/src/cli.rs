@@ -12,7 +12,7 @@ USAGE:
     vrfkit validate <file.vrf> [--diagnostics]
     vrfkit diag     <file.vrf> [--json <path>] [--include-payloads]
     vrfkit export   <file.vrf> --out <dir> [--checkpoints]
-    vrfkit sens     <file.vrf> [--offline]
+    vrfkit sens     <file.vrf> [--offline] [--behavior]
     vrfkit [file.vrf ...]   (or drag replays onto the exe / double-click
                              for the newest replay in VALORANT\\Saved\\Demos)
 
@@ -78,8 +78,8 @@ pub fn run(args: &[String]) -> Result<u8, CliError> {
         "export" => export(args).map(|()| 0),
         #[cfg(feature = "export")]
         "sens" => {
-            let (file, [offline], []) = parse(args, ["--offline"], [])?;
-            crate::sens::run(file, offline).map(|()| 0)
+            let (file, [offline, behavior], []) = parse(args, ["--offline", "--behavior"], [])?;
+            crate::sens::run(file, offline, false, behavior).map(|()| 0)
         }
         "help" | "--help" | "-h" => {
             println!("{USAGE}");
@@ -106,7 +106,7 @@ fn sens_interactive(files: &[String]) -> u8 {
     }
     let mut code = 0;
     for f in &files {
-        if let Err(e) = crate::sens::run(f, false) {
+        if let Err(e) = crate::sens::run(f, false, true, false) {
             println!("Error: {e}");
             code = 1;
         }
